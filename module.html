@@ -15,5 +15,10 @@
     <p>module1.m1()</p>
     <p>但是，这样的写法会暴露所有的模块成员，内部状态可以被外部改写。比如，外部代码可以直接改变内部计数器的值</p>
     <p>module1._count = 5;</p>
+    <h2>立即执行函数写法</h2>
+    <p>使用立即执行函数(Immediiately-Invoked Function Express,IIFE)，可以达到不暴露私有成员的目的</p>
+    <p>使用上面这种写法，外部代码无法读取内部的__count变量</p>
+    <p>console.log(module2._count);//</p>undefined
+    <p>module2就是使用javascript模块的基本写法。下面，再对这种写法进行加工</p>
 </body>
 </html>

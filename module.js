@@ -21,3 +21,20 @@ var module1 =  new Object({
 });
 module1.m1();
 module1.m2();
+module1._count = 5;
+
+//立即执行函数
+var module2 = (function(){
+    var _count = 0;
+    var m1 = function(){
+        console.log("IIFE m1");
+    };
+    var m2 = function(){
+        console.log("IIFE m2");
+    };
+    return {
+        m1 : m1,
+        m2 : m2
+    };
+})();
+console.log(module2._count);//undefined
