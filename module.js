@@ -38,3 +38,11 @@ var module2 = (function(){
     };
 })();
 console.log(module2._count);//undefined
+
+//放大模式
+var module3 =  (function (mod) {
+    mod.m3 = function(){
+        console.log("为了module2模块添加一个新方法m3");
+    };
+    return mod;
+})(module2);
