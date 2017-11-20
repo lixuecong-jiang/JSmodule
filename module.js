@@ -46,3 +46,30 @@ var module3 =  (function (mod) {
     };
     return mod;
 })(module2);
+
+//宽放大模式
+var module4 = (function (mod){
+    mod.m4 = function(){
+        console.log("宽放大模式就是立即执行函数的参数可以是空对象");
+    };
+    return mod;
+})(window.module3 || {});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
