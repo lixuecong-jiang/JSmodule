@@ -55,6 +55,11 @@ var module4 = (function (mod){
     return mod;
 })(window.module3 || {});
 
+//输入全局变量
+var module5 = (function($, YAHOO){
+//    ......
+})(jQuery, YAHOO);
+
 
 
 
